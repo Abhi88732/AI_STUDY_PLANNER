@@ -1,0 +1,335 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+
+  min-height:100vh;
+
+  background:linear-gradient(135deg,#141e30,#243b55);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:40px 20px;
+
+  overflow-x:hidden;
+
+  position:relative;
+}
+
+/* =========================
+   BACKGROUND BLUR EFFECT
+========================= */
+
+.bg-circle{
+
+  position:absolute;
+
+  border-radius:50%;
+
+  filter:blur(100px);
+
+  opacity:0.5;
+}
+
+.one{
+
+  width:300px;
+  height:300px;
+
+  background:#6c63ff;
+
+  top:-100px;
+  left:-100px;
+}
+
+.two{
+
+  width:350px;
+  height:350px;
+
+  background:#00c9a7;
+
+  bottom:-120px;
+  right:-100px;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container{
+
+  width:100%;
+  max-width:1200px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:25px;
+
+  padding:40px;
+
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
+  position:relative;
+
+  z-index:10;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+  text-align:center;
+
+  margin-bottom:50px;
+}
+
+.header h1{
+
+  color:white;
+
+  font-size:50px;
+
+  margin-bottom:15px;
+}
+
+#greeting{
+
+  color:#dcdcdc;
+
+  font-size:20px;
+
+  margin-bottom:10px;
+}
+
+#dateTime{
+
+  color:#00ffd5;
+
+  font-size:16px;
+}
+
+#motivation{
+
+  margin-top:20px;
+
+  color:#e0e0e0;
+
+  font-style:italic;
+
+  line-height:1.6;
+}
+
+/* =========================
+   DASHBOARD GRID
+========================= */
+
+.dashboard-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-card{
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  border-radius:25px;
+
+  padding:35px;
+
+  transition:0.4s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.dashboard-card:hover{
+
+  transform:translateY(-10px);
+
+  border-color:#00ffd5;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.dashboard-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,0.1),
+    transparent
+  );
+
+  top:0;
+  left:0;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.icon{
+
+  font-size:50px;
+
+  margin-bottom:20px;
+}
+
+.dashboard-card h2{
+
+  color:white;
+
+  font-size:24px;
+
+  margin-bottom:15px;
+}
+
+.dashboard-card p{
+
+  color:#dcdcdc;
+
+  font-size:18px;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-container{
+
+  width:100%;
+
+  height:12px;
+
+  background:rgba(255,255,255,0.15);
+
+  border-radius:10px;
+
+  margin-top:20px;
+
+  overflow:hidden;
+}
+
+.progress-fill{
+
+  height:100%;
+
+  width:0%;
+
+  background:linear-gradient(
+    90deg,
+    #00ffd5,
+    #00bfff
+  );
+
+  border-radius:10px;
+
+  transition:1s;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn{
+
+  display:inline-block;
+
+  margin-top:50px;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  background:#00ffd5;
+
+  color:#111;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.back-btn:hover{
+
+  transform:scale(1.05);
+
+  background:white;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+  .container{
+
+    padding:30px 20px;
+  }
+
+  .header h1{
+
+    font-size:35px;
+  }
+
+  #greeting{
+
+    font-size:18px;
+  }
+
+  .dashboard-card{
+
+    padding:25px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .header h1{
+
+    font-size:28px;
+  }
+
+  .dashboard-card h2{
+
+    font-size:20px;
+  }
+
+}

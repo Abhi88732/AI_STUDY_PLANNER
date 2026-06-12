@@ -1,0 +1,203 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+
+  min-height:100vh;
+
+  background:linear-gradient(135deg,#141e30,#243b55);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:40px 20px;
+
+  overflow-x:hidden;
+
+  position:relative;
+}
+
+/* BACKGROUND */
+
+.bg-circle{
+
+  position:absolute;
+
+  border-radius:50%;
+
+  filter:blur(100px);
+
+  opacity:0.5;
+}
+
+.one{
+
+  width:300px;
+  height:300px;
+
+  background:#6c63ff;
+
+  top:-100px;
+  left:-100px;
+}
+
+.two{
+
+  width:350px;
+  height:350px;
+
+  background:#00c9a7;
+
+  bottom:-120px;
+  right:-100px;
+}
+
+/* CONTAINER */
+
+.container{
+
+  width:100%;
+  max-width:1100px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  border-radius:25px;
+
+  padding:40px;
+
+  text-align:center;
+
+  z-index:10;
+
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1{
+
+  color:white;
+
+  font-size:50px;
+
+  margin-bottom:15px;
+}
+
+.subtitle{
+
+  color:#dcdcdc;
+
+  margin-bottom:40px;
+}
+
+/* CHART BOX */
+
+.chart-box{
+
+  background:rgba(255,255,255,0.08);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  margin-bottom:40px;
+}
+
+/* STATS */
+
+.stats{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+}
+
+.stat-card{
+
+  background:rgba(255,255,255,0.08);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  transition:0.3s;
+}
+
+.stat-card:hover{
+
+  transform:translateY(-8px);
+
+  border-color:#00ffd5;
+}
+
+.stat-card h2{
+
+  color:#00ffd5;
+
+  font-size:40px;
+
+  margin-bottom:10px;
+}
+
+.stat-card p{
+
+  color:white;
+
+  font-size:18px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+  display:inline-block;
+
+  margin-top:40px;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  background:white;
+
+  color:#111;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.back-btn:hover{
+
+  transform:scale(1.05);
+
+  background:#00ffd5;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  h1{
+    font-size:35px;
+  }
+
+  .container{
+    padding:30px 20px;
+  }
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet"
+        href="../CSS/DashBoard.css">
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND EFFECT -->
+
+  <div class="bg-circle one"></div>
+
+  <div class="bg-circle two"></div>
+
+  <!-- MAIN CONTAINER -->
+
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+      <h1>Dashboard 📊</h1>
+
+      <h3 id="greeting"></h3>
+
+      <p id="dateTime"></p>
+
+      <p id="motivation"></p>
+
+    </div>
+
+    <!-- DASHBOARD GRID -->
+
+    <div class="dashboard-grid">
+
+      <!-- TIMER CARD -->
+
+      <div
+        class="dashboard-card timer-card"
+        onclick="window.location.href='Timer.html'"
+      >
+
+        <div class="icon">⏰</div>
+
+        <h2>Total Study Hours</h2>
+
+        <p id="studyHours">
+
+          25 Hours
+
+        </p>
+
+        <span class="card-action">
+
+          Open Study Timer →
+
+        </span>
+
+      </div>
+
+      <!-- NOTES CARD -->
+
+      <div
+        class="dashboard-card notes-card"
+        onclick="window.location.href='Notes.html'"
+      >
+
+        <div class="icon">📝</div>
+
+        <h2>Smart Notes</h2>
+
+        <p id="completedTasks">
+
+          Save important study notes instantly.
+
+        </p>
+
+        <span class="card-action">
+
+          Open Smart Notes →
+
+        </span>
+
+      </div>
+
+      <!-- ANALYTICS CARD -->
+
+      <div
+        class="dashboard-card analytics-card"
+        onclick="window.location.href='Analytics.html'"
+      >
+
+        <div class="icon">📈</div>
+
+        <h2>Goal Progress</h2>
+
+        <p id="goalProgress">
+
+          62% Completed
+
+        </p>
+
+        <!-- PROGRESS BAR -->
+
+        <div class="progress-container">
+
+          <div
+            class="progress-fill"
+            id="progressFill"
+          ></div>
+
+        </div>
+
+        <span class="card-action">
+
+          Open Analytics →
+
+        </span>
+
+      </div>
+
+      <!-- STREAK CARD -->
+
+      <div
+        class="dashboard-card streak-card"
+        onclick="window.location.href='Analytics.html'"
+      >
+
+        <!-- TOP SECTION -->
+
+        <div class="streak-top">
+
+          <div class="icon">🔥</div>
+
+          <div class="streak-badge">
+
+            PRO
+
+          </div>
+
+        </div>
+
+        <!-- TITLE -->
+
+        <h2>Study Streak</h2>
+
+        <!-- STREAK NUMBER -->
+
+        <p class="streak-number">
+
+          7 Days Active
+
+        </p>
+
+        <!-- STREAK DOTS -->
+
+        <div class="mini-streak">
+
+          <span class="active"></span>
+          <span class="active"></span>
+          <span class="active"></span>
+          <span class="active"></span>
+          <span class="active"></span>
+          <span class="active"></span>
+          <span class="active"></span>
+
+        </div>
+
+        <!-- ACTION -->
+
+        <span class="card-action">
+
+          View Performance →
+
+        </span>
+
+      </div>
+
+    </div>
+
+    <!-- BACK BUTTON -->
+
+    <a href="../index.html"
+       class="back-btn">
+
+      ⬅ Back To Home
+
+    </a>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../JS/DashBoard.js"></script>
+
+</body>
+</html>

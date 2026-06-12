@@ -1,0 +1,231 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+
+  min-height:100vh;
+
+  background:linear-gradient(135deg,#141e30,#243b55);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  overflow:hidden;
+
+  position:relative;
+}
+
+/* BACKGROUND */
+
+.bg-circle{
+
+  position:absolute;
+
+  border-radius:50%;
+
+  filter:blur(100px);
+
+  opacity:0.5;
+}
+
+.one{
+
+  width:300px;
+  height:300px;
+
+  background:#6c63ff;
+
+  top:-100px;
+  left:-100px;
+}
+
+.two{
+
+  width:350px;
+  height:350px;
+
+  background:#00c9a7;
+
+  bottom:-120px;
+  right:-100px;
+}
+
+/* CONTAINER */
+
+.container{
+
+  width:90%;
+  max-width:700px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  border-radius:25px;
+
+  padding:50px;
+
+  text-align:center;
+
+  z-index:10;
+
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1{
+
+  color:white;
+
+  font-size:45px;
+
+  margin-bottom:15px;
+}
+
+.subtitle{
+
+  color:#dcdcdc;
+
+  margin-bottom:40px;
+
+  line-height:1.6;
+}
+
+/* TIMER BOX */
+
+.timer-box{
+
+  background:rgba(255,255,255,0.08);
+
+  padding:40px;
+
+  border-radius:25px;
+
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+#time{
+
+  font-size:90px;
+
+  color:#00ffd5;
+
+  margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.buttons{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  flex-wrap:wrap;
+}
+
+button{
+
+  padding:14px 25px;
+
+  border:none;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+button:hover{
+
+  transform:translateY(-5px);
+}
+
+button:nth-child(1){
+
+  background:#00ffd5;
+}
+
+button:nth-child(2){
+
+  background:#ffc107;
+}
+
+button:nth-child(3){
+
+  background:#ff5e5e;
+
+  color:white;
+}
+
+/* STATUS */
+
+#status{
+
+  margin-top:30px;
+
+  color:white;
+
+  font-size:18px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+  display:inline-block;
+
+  margin-top:40px;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  background:white;
+
+  color:#111;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.back-btn:hover{
+
+  transform:scale(1.05);
+
+  background:#00ffd5;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  h1{
+    font-size:35px;
+  }
+
+  #time{
+    font-size:65px;
+  }
+
+  .container{
+    padding:35px 20px;
+  }
+
+}

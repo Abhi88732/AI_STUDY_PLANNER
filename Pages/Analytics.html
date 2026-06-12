@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Study Analytics</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- CHART JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet"
+        href="../CSS/Analytics.css">
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND EFFECT -->
+
+  <div class="bg-circle one"></div>
+
+  <div class="bg-circle two"></div>
+
+  <!-- MAIN CONTAINER -->
+
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+      <h1>Study Analytics 📈</h1>
+
+      <p class="subtitle">
+
+        Track your real study progress,
+        productivity and learning habits.
+
+      </p>
+
+    </div>
+
+    <!-- CHART SECTION -->
+
+    <div class="chart-box">
+
+      <canvas id="studyChart"></canvas>
+
+    </div>
+
+    <!-- STATS SECTION -->
+
+    <div class="stats">
+
+      <!-- TOTAL HOURS -->
+
+      <div class="stat-card">
+
+        <h2 id="totalHours">0h</h2>
+
+        <p>Total Study Time</p>
+
+      </div>
+
+      <!-- GOAL -->
+
+      <div class="stat-card">
+
+        <h2 id="goalPercent">0%</h2>
+
+        <p>Weekly Goal</p>
+
+      </div>
+
+      <!-- STREAK -->
+
+      <div class="stat-card">
+
+        <h2 id="streak">0🔥</h2>
+
+        <p>Study Streak</p>
+
+      </div>
+
+      <!-- NOTES -->
+
+      <div class="stat-card">
+
+        <h2 id="notesCount">0</h2>
+
+        <p>Saved Notes</p>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCTIVITY SECTION -->
+
+    <div class="productivity-box">
+
+      <h2>📚 Productivity Insights</h2>
+
+      <ul>
+
+        <li>
+          ✅ Your focus sessions are improving.
+        </li>
+
+        <li>
+          🔥 Keep maintaining your study streak.
+        </li>
+
+        <li>
+          🎯 Weekly goal updates automatically.
+        </li>
+
+        <li>
+          📝 Notes count updates in real-time.
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- MOTIVATION -->
+
+    <div class="motivation-box">
+
+      <p id="motivationText">
+
+        🚀 Loading motivation...
+
+      </p>
+
+    </div>
+
+    <!-- DATE -->
+
+    <div class="date-box">
+
+      <p id="currentDate"></p>
+
+    </div>
+
+    <!-- BACK BUTTON -->
+
+    <a href="../index.html"
+       class="back-btn">
+
+      ⬅ Back To Home
+
+    </a>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../JS/Analytics.js"></script>
+
+</body>
+</html>

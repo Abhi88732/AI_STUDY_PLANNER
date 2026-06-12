@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pomodoro Timer</title>
+
+  <!-- GOOGLE FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="../css/Timer.css">
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND EFFECT -->
+
+  <div class="bg-circle one"></div>
+  <div class="bg-circle two"></div>
+
+  <!-- MAIN CONTAINER -->
+
+  <div class="container">
+
+    <h1>Pomodoro Timer ⏰</h1>
+
+    <p class="subtitle">
+      Stay focused and boost productivity with smart study sessions.
+    </p>
+
+    <!-- TIMER BOX -->
+
+    <div class="timer-box">
+
+      <h2 id="time">25:00</h2>
+
+      <div class="buttons">
+
+        <button onclick="startTimer()">
+          ▶ Start
+        </button>
+
+        <button onclick="pauseTimer()">
+          ⏸ Pause
+        </button>
+
+        <button onclick="resetTimer()">
+          🔄 Reset
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- STATUS -->
+
+    <p id="status">
+      Ready To Focus 🚀
+    </p>
+
+    <!-- BACK BUTTON -->
+
+    <a href="../index.html" class="back-btn">
+      ⬅ Back To Home
+    </a>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="../js/Timer.js"></script>
+
+</body>
+</html>
